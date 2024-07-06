@@ -9,19 +9,17 @@ repositories {
 }
 
 dependencies {
-    "modImplementation"(group = "tech.alexnijjar.endermanoverhaul", name = "endermanoverhaul-$modLoader-$minecraftVersion", version = endermanOverhaulVersion)
+    implementation("tech.alexnijjar.endermanoverhaul:endermanoverhaul-neoforge-$minecraftVersion:$endermanOverhaulVersion")
 }
 ```
 
 Groovy DSL:
 ```groovy
 repositories {
-    maven {
-        url "https://maven.teamresourceful.com/repository/maven-public/"
-    }
+    maven { url "https://maven.teamresourceful.com/repository/maven-public/" }
 }
 
 dependencies {
-    "modImplementation" group: "tech.alexnijjar.endermanoverhaul", name: "endermanoverhaul-$modLoader-$minecraftVersion", version: endermanOverhaulVersion
+    implementation "tech.alexnijjar.endermanoverhaul:endermanoverhaul-neoforge-$minecraftVersion:$endermanOverhaulVersion"
 }
 ```

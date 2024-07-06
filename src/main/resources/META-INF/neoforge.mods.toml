@@ -1,0 +1,52 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "ARR"
+issueTrackerURL = "https://github.com/bonsaistudi0s/endermanoverhaul/issues"
+
+[[mods]]
+modId = "$modId"
+version = "$version"
+displayName = "Enderman Overhaul"
+updateJSONURL = "https://api.modrinth.com/updates/enderman-overhaul/forge_updates.json"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/enderman-overhaul"
+logoFile = "icon.png"
+authors = "Alex Nijjar, Joosh"
+description = "Enderman Overhaul adds over 20 new enderman variants, each with their own sounds, models, and animations!"
+
+[[mixins]]
+config = "endermanoverhaul.mixins.json"
+
+[[dependencies.endermanoverhaul]]
+modId = "neoforge"
+type="required"
+versionRange = "[$neoforgeVersion,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.endermanoverhaul]]
+modId = "minecraft"
+type="required"
+versionRange = "[$minecraftVersion,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.endermanoverhaul]]
+modId = "resourcefullib"
+type="required"
+versionRange = "[$resourcefulLibVersion,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.endermanoverhaul]]
+modId = "resourcefulconfig"
+type="required"
+versionRange = "[$resourcefulConfigVersion,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.endermanoverhaul]]
+modId = "geckolib"
+type="required"
+versionRange = "[$geckolibVersion,)"
+ordering = "NONE"
+side = "BOTH"

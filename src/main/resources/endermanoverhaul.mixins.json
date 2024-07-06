@@ -1,0 +1,16 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "tech.alexnijjar.endermanoverhaul.mixins",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "common.EnderManMixin",
+        "common.IronGolemMixin",
+        "common.LivingEntityMixin"
+    ],
+    "client": [
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

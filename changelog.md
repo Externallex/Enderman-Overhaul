@@ -1,6 +1,1 @@
-- Fixed spawn placements not registered on neoforge causing insane amounts of spawning
-- Added recipes for converting custom pearls into ender pearls
-- Fixed ender bullets not despawning
-- Made cave enderman, soulsand valley enderman, and end enderman not hostile by default
-- Reduced end islands enderman damage
-- Added compat for Mekanism's baby enderman
+- 1.21

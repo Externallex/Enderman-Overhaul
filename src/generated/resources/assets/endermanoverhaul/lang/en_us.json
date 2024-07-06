@@ -126,7 +126,7 @@
   "tooltip.endermanoverhaul.hood": "Allows you to look at endermen without angering them",
   "tooltip.endermanoverhaul.icy_pearl": "Freezes nearby targets on hit",
   "tooltip.endermanoverhaul.not_bound": "Not bound",
-  "tooltip.endermanoverhaul.soul_pearl_1": "Shift-right click to bind an entity",
+  "tooltip.endermanoverhaul.soul_pearl_1": "Crouch-right-click to bind an entity",
   "tooltip.endermanoverhaul.soul_pearl_2": "Teleports the bound entity to the target location",
   "tooltip.endermanoverhaul.summoner_pearl": "Teleports nearby targets on hit",
   "tooltip.endermanoverhaul.warped_pearl": "Applies Resistance II when teleporting"

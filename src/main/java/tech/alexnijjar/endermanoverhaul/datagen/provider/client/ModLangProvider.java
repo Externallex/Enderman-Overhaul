@@ -42,7 +42,7 @@ public class ModLangProvider extends LanguageProvider {
         add("itemGroup.endermanoverhaul.main", "Enderman Overhaul");
 
         add(ConstantComponents.CORRUPTED_PEARL_TOOLTIP.getString(), "Teleports targets to a random location");
-        add(ConstantComponents.SOUL_PEARL_TOOLTIP_1.getString(), "Shift-right click to bind an entity");
+        add(ConstantComponents.SOUL_PEARL_TOOLTIP_1.getString(), "Crouch-right-click to bind an entity");
         add(ConstantComponents.SOUL_PEARL_TOOLTIP_2.getString(), "Teleports the bound entity to the target location");
         add(ConstantComponents.ANCIENT_PEARL_TOOLTIP.getString(), "Summons a friendly enderman to fight for you");
         add(ConstantComponents.BUBBLE_PEARL_TOOLTIP.getString(), "Accurate Ender Pearl with no gravity");

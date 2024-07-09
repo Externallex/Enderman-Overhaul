@@ -37,9 +37,8 @@ jobs:
           MAVEN_USER: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_PASS: ${{ secrets.MAVEN_PASSWORD }}
 
-      - name: Upload NeoForge Releases (Curse/Modrinth/Github)
+      - name: Upload NeoForge Releases (Curse/Modrinth)
         id: neoforge_release
-        if: contains(steps.properties.outputs.enabledPlatforms, 'neoforge')
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
           curseforge-id: ${{ vars.CURSE_ID }}
@@ -48,7 +47,7 @@ jobs:
           modrinth-id: ${{ vars.MODRINTH_ID }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 
-          files: ./build/libs/!(*-@(dev|sources|dev-shadow)).jar
+          files: ./build/libs/!(*-@(dev|sources)).jar
           name: "[NeoForge] Enderman Overhaul ${{ steps.properties.outputs.version }}"
           version: ${{ steps.properties.outputs.version }}
           version-type: release

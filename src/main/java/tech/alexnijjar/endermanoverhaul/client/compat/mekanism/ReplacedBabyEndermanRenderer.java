@@ -71,9 +71,4 @@ public class ReplacedBabyEndermanRenderer extends GeoReplacedEntityRenderer<Enti
     public static void register() {
         EntityRenderers.register(AdditionsEntityTypes.BABY_ENDERMAN.get(), ReplacedBabyEndermanRenderer::new);
     }
-
-    @Override
-    public RenderType getRenderType(ReplacedBabyEnderman animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource, float partialTick) {
-        return RenderType.entityCutout(texture);
-    }
 }

@@ -29,9 +29,12 @@ public class ReplacedBabyEnderman implements GeoReplacedEntity {
             EntityBabyEnderman enderman = getEndermanFromState(state);
             if (enderman == null) return PlayState.STOP;
 
-            if (state.isMoving()) {
-                state.getController().setAnimation(ConstantAnimations.RUN);
-                state.setControllerSpeed(3);
+            boolean moving = state.getLimbSwingAmount() > 0.01 || state.getLimbSwingAmount() < -0.01;
+            if (state.isMoving() || moving) {
+                state.getController().setAnimation(enderman.isCreepy() ?
+                    ConstantAnimations.RUN :
+                    ConstantAnimations.WALK);
+                state.setControllerSpeed(enderman.isCreepy() ? 3 : 2);
             } else {
                 state.getController().setAnimation(ConstantAnimations.IDLE);
                 state.setControllerSpeed(1);

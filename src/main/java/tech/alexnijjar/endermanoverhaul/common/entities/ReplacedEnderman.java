@@ -32,8 +32,10 @@ public class ReplacedEnderman implements GeoReplacedEntity {
                 state.getController().setAnimation(enderman.isCreepy() ?
                     ConstantAnimations.RUN :
                     ConstantAnimations.WALK);
+                state.setControllerSpeed(2);
             } else {
                 state.getController().setAnimation(ConstantAnimations.IDLE);
+                state.setControllerSpeed(1);
             }
             return PlayState.CONTINUE;
         }));

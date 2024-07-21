@@ -1,7 +1,7 @@
 plugins {
     java
     idea
-    id("net.neoforged.moddev") version "0.1.128" // https://projects.neoforged.net/neoforged/ModDevGradle
+    id("net.neoforged.moddev") version "1.0.14" // https://projects.neoforged.net/neoforged/ModDevGradle
     id("maven-publish")
 }
 
@@ -38,7 +38,6 @@ neoForge {
     runs {
         register("client") {
             client()
-            jvmArguments.add("-XX:+AllowEnhancedClassRedefinition")
         }
 
         register("server") {

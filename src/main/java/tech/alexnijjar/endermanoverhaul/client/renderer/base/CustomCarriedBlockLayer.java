@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.data.ModelData;
 import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 import tech.alexnijjar.endermanoverhaul.common.entities.base.BaseEnderman;
@@ -42,7 +43,7 @@ public class CustomCarriedBlockLayer<T extends GeoAnimatable> extends GeoRenderL
             pose.mulPose(Axis.YP.rotationDegrees(-lerped));
             pose.translate(0, enderman.get().getType().getDimensions().height() - 2.9, 0);
 
-            var leftArm = getGeoModel().getBone("left_arm").orElse(null);
+            GeoBone leftArm = getGeoModel().getBone("left_arm").orElse(null);
             if (leftArm == null) return;
             poseStack.mulPose(leftArm.getModelRotationMatrix());
             pose.mulPose(Axis.XP.rotationDegrees(-28.6479f));
@@ -54,7 +55,7 @@ public class CustomCarriedBlockLayer<T extends GeoAnimatable> extends GeoRenderL
             }
 
             if (baby) {
-                pose.translate(0, -0.3, -0.3f);
+                pose.translate(0.03, 0.9, -0.3f);
             }
 
             pose.translate(0, 0.6875f, -0.75f);
